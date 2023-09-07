@@ -1,7 +1,39 @@
 * {
     background-color: black;
 }
-.gif {
+
+.video-background {
+    background: #000;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    opacity: 0.5;
+}
+
+
+
+
+
+/* .gif {
     width: 600px;
 }
 
@@ -9,15 +41,14 @@
     /* justify-content: center;
     width: 50%;
     margin: auto;
-    position: relative;  */
-    /* Cambiamos la posición a relativa*/
+    position: relative;  
 }
 
 .imgs {
 
         display: flex;
         justify-content: center;
-        /* align-items: center; */
+
 
         margin: 0;
 
@@ -28,14 +59,12 @@
     display: flex;
     justify-content: center;
 
-    /* Cambiamos la posición a absoluta */
     bottom: 0;
-    /* Alineamos el eslogan en la parte inferior */
+
     right: 0;
-    /* Alineamos el eslogan a la derecha */
+
 
     background-color: rgba(0, 0, 0, 0.7);
-    /* Fondo semi-transparente */
     color: white;
     font-weight: bold;
     padding: 10px;
@@ -45,4 +74,4 @@
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-}
+} */

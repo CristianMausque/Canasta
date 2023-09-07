@@ -38,17 +38,15 @@ function NavbarComponent() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="/works" style={{ color: "white" }}><h3><strong>WORKS</strong></h3></Nav.Link>
-            <Nav.Link href="/services" style={{ color: "white" }}><h3><strong>SERVICES</strong></h3></Nav.Link>
-            <Nav.Link href="/team" style={{ color: "white" }}><h3><strong>TEAM</strong></h3></Nav.Link>
-            <Nav.Link href="/contact" style={{ color: "white" }}><h3><strong>CONTACT</strong></h3></Nav.Link>
+            <Nav.Link href="/works" style={{ color: "white" }}><h1><strong>WORKS</strong></h1></Nav.Link>
+            <Nav.Link href="/services" style={{ color: "white" }}><h1><strong>SERVICES</strong></h1></Nav.Link>
+            <Nav.Link href="/team" style={{ color: "white" }}><h1><strong>TEAM</strong></h1></Nav.Link>
+            <Nav.Link href="/contact" style={{ color: "white" }}><h1><strong>CONTACT</strong></h1></Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
-
     </>
   )
 }
 
 export default NavbarComponent
-

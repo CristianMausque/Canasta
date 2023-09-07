@@ -10,7 +10,8 @@
 
 /* Estilo para el logo de Canasta con padding izquierdo de 10 */
 .navbar-brand img.logo {
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-top: 9px;
 }
 
 /* Estilo para el botón de toggle con margen derecho para separar más a la derecha */
@@ -18,3 +19,16 @@ button.navbar-toggler {
     margin-right: 10px;
     /* Puedes ajustar el valor según tus preferencias */
 }
+
+/* Aumentar el tamaño del logo en un 10% */
+.logo {
+    transform: scale(1.3);
+    /* Escala el elemento al 110% de su tamaño original */
+}
+
+/* Estilo para limitar el ancho del menú desplegable al 70% de la página */
+.offcanvas {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Ajusta el último valor (0.8) para controlar la opacidad */
+}
+
