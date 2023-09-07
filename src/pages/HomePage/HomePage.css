@@ -1,0 +1,48 @@
+* {
+    background-color: black;
+}
+.gif {
+    width: 600px;
+}
+
+.imgs {
+    /* justify-content: center;
+    width: 50%;
+    margin: auto;
+    position: relative;  */
+    /* Cambiamos la posición a relativa*/
+}
+
+.imgs {
+
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+
+        margin: 0;
+
+}
+
+.slogan {
+
+    display: flex;
+    justify-content: center;
+
+    /* Cambiamos la posición a absoluta */
+    bottom: 0;
+    /* Alineamos el eslogan en la parte inferior */
+    right: 0;
+    /* Alineamos el eslogan a la derecha */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 0.15em;
+    font-family: 'Andale Mono', monospace;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}

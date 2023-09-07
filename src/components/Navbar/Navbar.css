@@ -1,40 +1,20 @@
 .navbar-nav {
     justify-content: space-evenly;
     width: 100%;
-    height: 70px;
     align-items: center;
 }
-.navbar a.nav-link {
-    color: white;
-    /* Cambia el color del texto a blanco */
+
+.close-button {
+    margin-left: auto;
 }
 
-.container {
-margin: 0px, 0px !important;
-padding: 0px, 0px !important;
-
+/* Estilo para el logo de Canasta con padding izquierdo de 10 */
+.navbar-brand img.logo {
+    padding-left: 10px;
 }
 
-a.navbar-brand {
-    padding: 0;
-    /* Elimina el padding */
-}
-
-.polla {
-    margin: none;
-}
-
-.navbar-left {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-right {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.center-logo {
-    justify-content: center;
-    align-items: center;
+/* Estilo para el botón de toggle con margen derecho para separar más a la derecha */
+button.navbar-toggler {
+    margin-right: 10px;
+    /* Puedes ajustar el valor según tus preferencias */
 }
