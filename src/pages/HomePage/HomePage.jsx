@@ -11,7 +11,9 @@ const HomePage = () => {
             type="video/mp4" />
         </video>
       </div>
-      <div className="overlay-text">LETRAS DE PRUEBA</div>
+      <div className="overlay-text">
+        <h1>LETRAS DE PRUEBA</h1>
+      </div>
     </>
   );
 };

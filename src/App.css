@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MiTipografia';
+    src: url('../public/gotham-black-italic_3w1H3/GothamBlackItalic/GothamBlackItalic.otf')
+     format('opentype'),
+}
+* {
+    font-family: 'MiTipografia'
+}
