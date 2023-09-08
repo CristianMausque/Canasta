@@ -12,7 +12,7 @@ function NavbarComponent() {
 
   return (
     <>
-      <Navbar expand="lg" bg="black" variant="dark" className={`justify-content-between align-items-center navbar-lg`}>
+      <Navbar sticky="top" expand="lg" bg="black" variant="dark" className={`justify-content-between align-items-center navbar-lg`}>
         <Navbar.Brand href="/"><img src="/canasta_logo_mini.webp" alt="Logo" className="logo img-fluid d-block d-xxl-none" /></Navbar.Brand>
         <button className="navbar-toggler d-lg-none" type="button" onClick={handleToggleMenu}>
           <span className="navbar-toggler-icon"></span>

@@ -11,9 +11,14 @@ const HomePage = () => {
             type="video/mp4" />
         </video>
       </div>
-      <div className="overlay-text">
-        <h1>LETRAS DE PRUEBA</h1>
+      <div className="home-text">
+
+        <h1>CREATIVE AGENCY</h1>
+        <h1>NURTURED | AV | SOUND</h1>
+        <h1>TECH AHEAD - WEB3 LABEL</h1>
       </div>
+
+      <img src='public\logosony.webp' className='brands'></img>
     </>
   );
 };
