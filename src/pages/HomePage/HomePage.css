@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Gotham';
     src: url('../public/gotham-black-italic_3w1H3/GothamBlackItalic/GothamBlackItalic.otf'),
-     format('opentype')
+    format('opentype')
 }
 
 * {
@@ -27,20 +27,19 @@
 }
 
 .home-text {
-
+    
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 36px;
-
     padding: 10px;
     opacity: 1;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
     color: transparent;
     width: 100%;
-    padding-left: 5%
+    padding-left: 5%;
 }
 
 h1 {
