@@ -14,7 +14,7 @@ const HomePage = () => {
       <div className="home-text">
 
         <h1>CREATIVE AGENCY</h1>
-        <h1>NURTURED | AV | SOUND</h1>
+        <h1>NURTURED - AV - SOUND</h1>
         <h1>TECH AHEAD - WEB3 LABEL</h1>
       </div>
 
