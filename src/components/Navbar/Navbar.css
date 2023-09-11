@@ -41,3 +41,14 @@ button.navbar-toggler {
     font-size: 24px;
     /* Tamaño de fuente del botón de cierre (ajusta según tus preferencias) */
 }
+
+@font-face {
+    font-family: 'MiTipografia';
+    src: url('../public/gotham-black-italic_3w1H3/GothamBlackItalic/GothamBlackItalic.otf'),
+        format('opentype'),
+}
+
+* {
+    font-family: 'MiTipografia';
+
+}

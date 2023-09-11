@@ -6,12 +6,10 @@
 
 @font-face {
     font-family: 'GothamLight';
-    ;
     src: url('public/gotham-extralight-italic_HtMfD/GothamExtraLightItalic/GothamExtraLightItalic.ttf');
 }
 
 * {
-    font-family: 'Gotham';
     overflow: hidden;
     background-color: black;
 }
@@ -26,6 +24,7 @@
 }
 
 h1 {
+    font-family: 'Gotham';
     font-size: 5.7vw;
     line-height: 0.95;
     padding-left: 10px;
