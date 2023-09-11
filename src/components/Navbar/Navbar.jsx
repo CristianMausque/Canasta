@@ -1,5 +1,6 @@
-import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { CloseButton, Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
 import { useState } from 'react'
+import Button from 'react-bootstrap/Button'
 import "./Navbar.css"
 import { FaTimes } from 'react-icons/fa' // Importar el icono "X"
 
@@ -31,7 +32,7 @@ function NavbarComponent() {
       </Navbar>
 
       <Offcanvas show={showMenu} onHide={() => setShowMenu(false)} placement="end">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header>
           <button className="close-button ml-auto" onClick={() => setShowMenu(false)}>
             <FaTimes /> {/* Icono "X" para cerrar */}
           </button>
