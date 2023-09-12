@@ -22,9 +22,6 @@ button.navbar-toggler {
 
 /* Aumentar el tamaño del logo en un 10% */
 
-
-*/
-
 /* Estilo para limitar el ancho del menú desplegable al 70% de la página */
 .offcanvas {
     background-color: rgba(0, 0, 0, 0.8);
@@ -43,12 +40,12 @@ button.navbar-toggler {
 }
 
 @font-face {
-    font-family: 'MiTipografia';
+    font-family: 'Gotham';
     src: url('../public/gotham-black-italic_3w1H3/GothamBlackItalic/GothamBlackItalic.otf'),
         format('opentype'),
 }
 
 * {
-    font-family: 'MiTipografia';
+    font-family: 'Gotham';
 
 }

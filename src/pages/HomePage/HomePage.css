@@ -1,12 +1,11 @@
 @font-face {
     font-family: 'Gotham';
-    src: url('../public/gotham-black-italic_3w1H3/GothamBlackItalic/GothamBlackItalic.otf'),
-        format('opentype');
+    src: url('public/GothamBlackItalic/GothamBlackItalic.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'GothamLight';
-    src: url('public/gotham-extralight-italic_HtMfD/GothamExtraLightItalic/GothamExtraLightItalic.ttf');
+    src: url('public/GothamExtraLightItalic/GothamExtraLightItalic.ttf') format('truetype');
 }
 
 * {
@@ -24,7 +23,6 @@
 }
 
 h1 {
-    font-family: 'Gotham';
     font-size: 5.7vw;
     line-height: 0.95;
     padding-left: 10px;
