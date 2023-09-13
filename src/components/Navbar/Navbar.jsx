@@ -20,13 +20,13 @@ function NavbarComponent() {
         </button>
         <Navbar.Collapse id="basic-navbar-nav" className="d-lg-flex justify-content-lg-end">
           <Nav className="flex-row">
-            <Nav.Link href="/works"><h3 style={{ color: "white" }}><strong>WORKS</strong></h3></Nav.Link>
-            <Nav.Link href="/services"><h3 style={{ color: "white" }}><strong>SERVICES</strong></h3></Nav.Link>
+            <Nav.Link href="/works"><h3 style={{ color: "white" }}>WORKS</h3></Nav.Link>
+            <Nav.Link href="/services"><h3 style={{ color: "white" }}>SERVICES</h3></Nav.Link>
             <div className="center-logo d-none d-xxl-block">
               <Navbar.Brand href="/"><img src="/canastalogohorizontal.webp" alt="Logo" className="polla" /></Navbar.Brand>
             </div>
-            <Nav.Link href="/team"><h3 style={{ color: "white" }}><strong>TEAM</strong></h3></Nav.Link>
-            <Nav.Link href="/contact"><h3 style={{ color: "white" }}><strong>CONTACT</strong></h3></Nav.Link>
+            <Nav.Link href="/team"><h3 style={{ color: "white" }}>TEAM</h3></Nav.Link>
+            <Nav.Link href="/contact"><h3 style={{ color: "white" }}>CONTACT</h3></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -8,35 +8,29 @@
     margin-left: auto;
 }
 
-/* Estilo para el logo de Canasta con padding izquierdo de 10 */
 .navbar-brand img.logo {
     padding-left: 17px;
     padding-top: 3px;
 }
 
-/* Estilo para el botón de toggle con margen derecho para separar más a la derecha */
 button.navbar-toggler {
     margin-right: 10px;
-    /* Puedes ajustar el valor según tus preferencias */
 }
 
-/* Aumentar el tamaño del logo en un 10% */
 
-/* Estilo para limitar el ancho del menú desplegable al 70% de la página */
 .offcanvas {
     background-color: rgba(0, 0, 0, 0.8);
-    /* Ajusta el último valor (0.8) para controlar la opacidad */
 }
 
 .close-button {
     color: white;
-    /* Cambia el color del texto a blanco */
     background-color: transparent;
-    /* Establece el fondo transparente si es necesario */
     border: none;
-    /* Elimina el borde si es necesario */
     font-size: 24px;
-    /* Tamaño de fuente del botón de cierre (ajusta según tus preferencias) */
+}
+
+h3 {
+    padding-right: 10px
 }
 
 @font-face {
