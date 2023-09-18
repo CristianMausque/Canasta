@@ -1,57 +1,51 @@
+import React from 'react'
+import Videos from '../../components/Navbar/Videos/Videos'
+
 const VIDEOS = [
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=msCXW6AJUEk',
         id: 1
     },
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     },
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     },
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     },
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     },
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     },
     {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     },
     {
-        url: 'akdcasekda',
-        id: 1
-    },
-    {
-        url: 'akdcasekda',
-        id: 1
-    },
-    {
-        url: 'akdcasekda',
-        id: 1
-    },
-    {
-        url: 'akdcasekda',
+        embedCode: 'https://www.youtube.com/watch?v=mJPNDGiLaBA',
         id: 1
     }
 ]
 
-
-
-import React from 'react'
-
 const WorksPage = () => {
     return (
-        <h1>Hola puto calvo jaja te la tragaste</h1>
+        <div>
+            <h1>Lista de Videos</h1>
+            <div className="videos-list">
+                {VIDEOS.map((video, index) => (
+                    <Videos key={index} embedCode={video.embedCode} id={video.id} />
+                ))}
+            </div>
+        </div>
     )
 }
 
