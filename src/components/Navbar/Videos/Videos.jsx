@@ -2,14 +2,13 @@ import React from 'react'
 
 const Videos = (props) => {
     return (
-        <iframe
-            width="560"  // Ancho del iframe (ajusta según tus necesidades)
-            height="315" // Alto del iframe (ajusta según tus necesidades)
-            src={props.embedCode} // Prop que contiene el código de inserción de YouTube
-            title="Video de YouTube"
-            frameBorder="0"
-            allowFullScreen
-        ></iframe>
+        <iframe 
+        width="560" 
+        height="315" 
+        src={props.src}
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
     )
 }
 
