@@ -3,7 +3,7 @@ import './HomePage.css';
 
 const HomePage = () => {
   return (
-    <>
+    <div className='overflow'>
       <div className="home-text">
         <h1>CREATIVE AGENCY</h1>
         <p className="paragraph">
@@ -40,7 +40,7 @@ const HomePage = () => {
         </p>
       </div>
       <img src="public\logosony.webp" className="brands" alt="Logo" />
-    </>
+    </div>
   );
 };
 

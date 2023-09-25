@@ -1,77 +1,120 @@
-import React, { useEffect } from 'react';
-import Videos from '../../components/Navbar/Videos/Videos';
-
-const VIDEOS = [
-    {
-        videoId: 'msCXW6AJUEk',
-        id: 1
-    },
-    {
-        videoId: 'mJPNDGiLaBA',
-        id: 2
-    },
-    // ... (otros videos)
-];
+import React, { useEffect, useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
 const WorksPage = () => {
-    useEffect(() => {
-        // Cargar la API de YouTube
-        const script = document.createElement('script');
-        script.src = 'https://www.youtube.com/iframe_api';
-        script.async = true;
+    const [index, setIndex] = useState(0);
 
-        script.onload = () => {
-            // API de YouTube cargada, puedes configurar y controlar los videos aquí
-
-            // Configurar los parámetros para todos los videos
-            const playerVars = {
-                controls: 0,
-                rel: 0,
-                modestbranding: 1,
-                autoplay: 0,
-                mute: 1, // Sonido desactivado
-            };
-
-            // Crear los reproductores de video para cada video en VIDEOS
-            VIDEOS.forEach((video) => {
-                new YT.Player(`video-${video.id}`, {
-                    videoId: video.videoId,
-                    playerVars: playerVars,
-                    events: {
-                        'onReady': (event) => {
-                            // Agrega el evento de reproducción al pasar el cursor sobre el video
-                            event.target.addEventListener('mouseenter', () => {
-                                event.target.playVideo();
-                            });
-
-                            // Detiene el video cuando el cursor sale del área del video
-                            event.target.addEventListener('mouseleave', () => {
-                                event.target.pauseVideo();
-                            });
-                        },
-                    },
-                });
-            });
-        };
-
-        document.head.appendChild(script);
-
-        return () => {
-            // Limpiar el script cuando el componente se desmonte
-            document.head.removeChild(script);
-        };
-    }, []);
+    // Mueve la declaración de handleSelect aquí, dentro del componente WorksPage
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+    };
 
     return (
-        <div>
-            <h1>Lista de Videos</h1>
-            <div className="videos-list">
-                {VIDEOS.map((video, index) => (
-                    <div key={index} id={`video-${video.id}`} />
-                ))}
-            </div>
-        </div>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/msCXW6AJUEk?si=AE0i2BIoZLFl-PP8&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/mJPNDGiLaBA?si=C_qM1Eq2RmJhIhM-&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/53PEU8mbKxw?si=QtxxprXCH90hOWrM&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/53PEU8mbKxw?si=QtxxprXCH90hOWrM&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/53PEU8mbKxw?si=QtxxprXCH90hOWrM&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/53PEU8mbKxw?si=QtxxprXCH90hOWrM&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <iframe width="1450"
+                    height="720"
+                    src="https://www.youtube.com/embed/53PEU8mbKxw?si=QtxxprXCH90hOWrM&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+
     );
-};
+}
 
 export default WorksPage;
