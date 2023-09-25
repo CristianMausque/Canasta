@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import "./Navbar.css"
 import { FaTimes } from 'react-icons/fa' // Importar el icono "X"
+import { Link } from "react-router-dom";
 
 function NavbarComponent() {
   const [showMenu, setShowMenu] = useState(false)
@@ -20,13 +21,28 @@ function NavbarComponent() {
         </button>
         <Navbar.Collapse id="basic-navbar-nav" className="d-lg-flex justify-content-lg-end">
           <Nav className="flex-row">
-            <Nav.Link href="/works"><h3 style={{ color: "white" }}>WORKS</h3></Nav.Link>
-            <Nav.Link href="/services"><h3 style={{ color: "white" }}>SERVICES</h3></Nav.Link>
+           <Link className="noTextDecor" to={"/works"}>
+            <h3 style={{ color: "white" }}>WORKS</h3>
+           </Link>
+
+          <Link className="noTextDecor" to={"/services"}>
+            <h3 style={{ color: "white" }}>SERVICES</h3>
+          </Link>
+
+          <Link className="noTextDecor" to={"/"}>
             <div className="center-logo d-none d-xxl-block">
-              <Navbar.Brand href="/"><img src="/canastalogohorizontal.webp" alt="Logo" className="polla" /></Navbar.Brand>
+              <Navbar.Brand ><img src="/canastalogohorizontal.webp" alt="Logo" className="polla" /></Navbar.Brand>
             </div>
-            <Nav.Link href="/team"><h3 style={{ color: "white" }}>TEAM</h3></Nav.Link>
-            <Nav.Link href="/contact"><h3 style={{ color: "white" }}>CONTACT</h3></Nav.Link>
+          </Link>
+
+          <Link className="noTextDecor" to={"/team"}>
+            <h3 style={{ color: "white" }}>TEAM</h3>
+          </Link>
+
+          <Link className="noTextDecor" to={"/contact"}>
+            <h3 style={{ color: "white" }}>CONTACT</h3>
+          </Link>            
+            
           </Nav>
         </Navbar.Collapse>
       </Navbar>
