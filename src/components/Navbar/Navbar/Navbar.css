@@ -43,3 +43,7 @@ h3 {
     font-family: 'Gotham';
 
 }
+
+.noTextDecor{
+    text-decoration: none;
+}
