@@ -33,6 +33,11 @@ h3 {
     padding-right: 10px
 }
 
+.popover:hover {
+    display: block;
+    color: red
+}
+
 @font-face {
     font-family: 'Gotham';
     src: url('../public/gotham-black-italic_3w1H3/GothamBlackItalic/GothamBlackItalic.otf'),
@@ -44,6 +49,6 @@ h3 {
 
 }
 
-.noTextDecor{
+.noTextDecor {
     text-decoration: none;
 }

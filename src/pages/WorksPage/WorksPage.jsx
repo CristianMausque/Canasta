@@ -11,8 +11,8 @@ class WorksPage extends React.Component {
 
         this.state = {
             index: 0,
-            videos: ['msCXW6AJUEk', "mJPNDGiLaBA", 'sPZIYGpfpgE'],
-            players: [], // Reemplaza esto con los ID de tus videos de YouTube
+            videos: ['msCXW6AJUEk', "mJPNDGiLaBA;rel=0&modestbranding=1&controls=0", 'sPZIYGpfpgE'],
+            players: ['msCXW6AJUEk', "mJPNDGiLaBA", 'sPZIYGpfpgE'], // Reemplaza esto con los ID de tus videos de YouTube
         };
     }
 
@@ -46,6 +46,7 @@ class WorksPage extends React.Component {
                         <Carousel.Item key={i}>
                             <YouTube videoId={videoId} opts={{
                                 playerVars: {
+                                    controls: 0,
                                     autoplay: i === index ? 1 : 0,
                                     rel: 0, // Evita que se muestren vídeos relacionados al final
                                     modestbranding: 1,
